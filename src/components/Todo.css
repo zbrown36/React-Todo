@@ -43,7 +43,7 @@ h1 {
 
 .task-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   width: 100%;
   margin: 0 auto;

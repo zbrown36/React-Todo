@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Todo = props => {
-  return (
-    <div
-      className={`item${props.item.completed ? ' completed' : ''}`}
-      onClick={() => props.toggleItem(props.item.id)}
-    >
-      <p>{props.item.task}</p>
-    </div>
-  );
+const Item = props => {
+    return (
+        <div
+            className={`item${props.task.completed ? "  completed" : ""}`} //ternary operation
+            onClick={() => props.toggleTask(props.task.id)}
+        >
+            <p>{props.task.name}</p>
+        </div>
+    );
 };
 
-export default Todo;
+export default Item;
